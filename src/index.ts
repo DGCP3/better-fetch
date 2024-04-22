@@ -278,6 +278,7 @@ export const createFetch = <Error = unknown>(config?: CreateFetchOption) => {
 		});
 	};
 };
+
 betterFetch.native = fetch;
 export type BetterFetch = typeof betterFetch;
 export type CreateFetch = typeof createFetch;
