@@ -1,0 +1,22 @@
+{
+  "name": "@better-tools/fetch",
+  "version": "1.0.0",
+  "packageManager": "bun@1.1.4",
+  "devDependencies": {
+    "@types/bun": "^1.1.0",
+    "@types/node": "^20.11.30",
+    "biome": "^0.3.3",
+    "semantic-release": "^23.0.8",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --apply",
+    "typecheck": "tsc --noEmit"
+  }
+}
